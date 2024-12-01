@@ -36,8 +36,6 @@ void solution2(const std::string &fileName) {
         right[r] += 1;
     }
 
-    std::ranges::sort(left);
-
     size_t acc = 0;
     for (const auto &item: left) {
         acc += item * right[item];
