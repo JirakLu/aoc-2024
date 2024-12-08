@@ -11,4 +11,5 @@ add_executable(_04 04/main.cpp)
 add_executable(_05 05/main.cpp)
 add_executable(_06 06/main.cpp)
 add_executable(_07 07/main.cpp)
+add_executable(_08 08/main.cpp)
 
