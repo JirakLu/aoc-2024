@@ -1,6 +1,7 @@
 #include <fstream>
 #include <iostream>
 #include <limits>
+#include <list>
 #include <ranges>
 #include <vector>
 
@@ -53,7 +54,7 @@ void solution1(const std::string &fileName) {
 void solution2(const std::string &fileName) {
     std::ifstream file(fileName);
 
-    std::vector<Block> blocks;
+    std::list<Block> blocks;
     char c = '0';
     size_t id = 0;
     bool isFile = true;
@@ -68,7 +69,7 @@ void solution2(const std::string &fileName) {
         isFile = !isFile;
     }
 
-    std::vector<Block> result;
+    std::list<Block> result;
 
     for (auto &b: blocks) {
         if (b.m_Id != std::numeric_limits<size_t>::max() && !b.isMoved) {
