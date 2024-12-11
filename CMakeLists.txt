@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.29)
 project(progtest)
 
 set(CMAKE_CXX_STANDARD 20)
-add_compile_options(-Wall -Wextra -Wpedantic -Werror -Wextra -Wshadow -Wno-long-long -Wmaybe-uninitialized -Wsuggest-attribute=const -O2)
+add_compile_options(-Wall -Wextra -Wpedantic -Werror -Wextra -Wshadow -Wno-long-long -Wmaybe-uninitialized -Wsuggest-attribute=const -O3)
 
 add_executable(_01 01/main.cpp)
 add_executable(_02 02/main.cpp)
@@ -14,3 +14,4 @@ add_executable(_07 07/main.cpp)
 add_executable(_08 08/main.cpp)
 add_executable(_09 09/main.cpp)
 add_executable(_10 10/main.cpp)
+add_executable(_11 11/main.cpp)
